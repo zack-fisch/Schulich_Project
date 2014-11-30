@@ -16,11 +16,25 @@
     <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav">
-        <li class="active">
-          <%= link_to 'Dashboard', controller: 'users', action: 'profile' %>
-          <span class="sr-only">(current)</span>
+       <% if current_page?(controller: 'home', action: 'landing') %> 
+          <li class="active">
+            <%= link_to 'Dashboard', controller: 'users', action: 'profile' %>
+            <span class="sr-only">(current)</span>
+          </li>
+        <% else %>
+        <li>
+           <%= link_to 'Dashboard', controller: 'users', action: 'profile' %>
+            <span class="sr-only">(current)</span>
         </li>
-      
+        <li>
+          <%= link_to 'Classes', controller: 'users', action: 'classes' %>
+       </li>
+         <li>
+          <%= link_to 'Calendar', controller: 'users', action: 'calendar' %>
+          <!-- Other things to be added -->
+       </li>
+        <% end %>
+
       </ul>
    
     </div><!-- /.navbar-collapse -->

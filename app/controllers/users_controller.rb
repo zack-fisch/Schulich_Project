@@ -5,4 +5,7 @@ class UsersController < ApplicationController
 
   def classes
   end
+
+  def calendar
+  end
 end
