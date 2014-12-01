@@ -1,24 +1,42 @@
-<div id="container">
+<head>
+  <link rel="stylesheet" href="//code.jquery.com/ui/1.11.2/themes/smoothness/jquery-ui.css">
+  <script src="//code.jquery.com/jquery-1.10.2.js"></script>
+  <script src="//code.jquery.com/ui/1.11.2/jquery-ui.js"></script>
+  <link rel="stylesheet" href="/resources/demos/style.css">
+  <script>
+  $(function() {
+    $( "#datepicker" ).datepicker();
+  });
+  </script>
+</head>
+
+ 
+ <div id="container">
 	<h1>Welcome, <%=@zack.name %></h1>
 	<%= image_tag avatar_url(@zack, 200) %>
-
-	<div
 </div>
 
-<div id="feed">
-	
-<h2>In the News</h2>
-<script type="text/javascript">
-// set up variables that customize the display
-var wpr_header_name     = 'In the News | Schulich News | Email'
-var wpr_total_font      = 'size="2" face="Verdana" color="666666"';
-var wpr_total_font_desc = 'size="1" face="Verdana" color="666666"';
-var wpr_total_number    = 7;
-var wpr_odd_row_color   = 'e2dec2';
-var wpr_even_row_color  = 'ffffff';
-var wpr_open_in_blank   = true;
-var wpr_table_width     = '100%';
-</script>
-<script src="http://worldpress.org/feeds/worldpresswire.js" 
-type="text/javascript"></script>
+<div id="datepicker"></div>
+ 
+ 
+</body>
+</html>
+
+<div id="datepicker"></div>
+
+	<div id="feed">
+	<h2>In the News</h2>
+	<script type="text/javascript">
+	// set up variables that customize the display
+	var wpr_header_name     = 'In the News | Schulich News | Email'
+	var wpr_total_font      = 'size="2" face="Verdana" color="666666"';
+	var wpr_total_font_desc = 'size="1" face="Verdana" color="666666"';
+	var wpr_total_number    = 7;
+	var wpr_odd_row_color   = 'e2dec2';
+	var wpr_even_row_color  = 'ffffff';
+	var wpr_open_in_blank   = true;
+	var wpr_table_width     = '100%';
+	</script>
+	<script src="http://worldpress.org/feeds/worldpresswire.js" 
+	type="text/javascript"></script>
 </div>
