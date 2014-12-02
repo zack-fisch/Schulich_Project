@@ -8,23 +8,23 @@
     $( "#datepicker" ).datepicker();
   });
   </script>
+  <script>
+    $(function() {
+        $( ".ui-widget-content" ).draggable();
+    });
+    </script>
 </head>
 
  
  <div id="container">
 	<h1>Welcome, <%=@zack.name %></h1>
-	<%= image_tag avatar_url(@zack, 200) %>
+	<%= image_tag avatar_url(@zack, 200), :class => "ui-widget-content" %>
 </div>
 
 <div id='date'>
-	<div id="datepicker"></div>
+	<div id="datepicker" class="ui-widghet-content"></div>
 </div>
- 
- 
-</body>
-</html>
 
-<div id="datepicker"></div>
 
 	<div id="feed">
 	<h2>In the News | <%= Time.now.strftime("%m/%d/%Y") %></h2>
