@@ -7,7 +7,7 @@ Rails.application.routes.draw do
 
   get 'home/landing'
 
-  get 'users/calendar'
+  get 'users/rooms'
 
 
   # The priority is based upon order of creation: first created -> highest priority.

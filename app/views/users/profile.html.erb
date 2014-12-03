@@ -18,16 +18,22 @@
  
  <div id="container">
 	<h1>Welcome, <%=@zack.name %></h1>
+	<h1>Your Student ID: <%=User.first.student_number %></h1>
 	<%= image_tag avatar_url(@zack, 200), :class => "ui-widget-content" %>
+
+
+<div class="date">
+	<div id="datepicker"></div>
 </div>
 
-<div id='date'>
-	<div id="datepicker" class="ui-widghet-content"></div>
+<div id='weather' >
+	<%= image_tag(("weather.png"), :class => "ui-widget-content" )%>
 </div>
 
+</div>
 
 	<div id="feed">
-	<h2>In the News | <%= Time.now.strftime("%m/%d/%Y") %></h2>
+	<h2>Activity Feed | <%= Time.now.strftime("%m/%d/%Y") %></h2>
 
 	<script type="text/javascript">
 	// set up variables that customize the display

@@ -83,3 +83,4 @@ production:
   database: OMIS_production
   username: OMIS
   password: <%= ENV['OMIS_DATABASE_PASSWORD'] %>
+

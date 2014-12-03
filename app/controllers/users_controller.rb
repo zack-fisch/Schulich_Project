@@ -6,6 +6,6 @@ class UsersController < ApplicationController
   def classes
   end
 
-  def calendar
+  def rooms
   end
 end
